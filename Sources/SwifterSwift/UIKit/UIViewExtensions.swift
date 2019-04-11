@@ -62,7 +62,7 @@ public extension UIView {
 public extension UIView {
 
     /// SwifterSwift: Border color of view; also inspectable from Storyboard.
-    @IBInspectable var borderColor: UIColor? {
+     var borderColor: UIColor? {
         get {
             guard let color = layer.borderColor else { return nil }
             return UIColor(cgColor: color)
@@ -79,7 +79,7 @@ public extension UIView {
     }
 
     /// SwifterSwift: Border width of view; also inspectable from Storyboard.
-    @IBInspectable var borderWidth: CGFloat {
+     var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -89,7 +89,7 @@ public extension UIView {
     }
 
     /// SwifterSwift: Corner radius of view; also inspectable from Storyboard.
-    @IBInspectable var cornerRadius: CGFloat {
+     var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -130,7 +130,7 @@ public extension UIView {
     }
 
     /// SwifterSwift: Shadow color of view; also inspectable from Storyboard.
-    @IBInspectable var shadowColor: UIColor? {
+     var shadowColor: UIColor? {
         get {
             guard let color = layer.shadowColor else { return nil }
             return UIColor(cgColor: color)
@@ -141,7 +141,7 @@ public extension UIView {
     }
 
     /// SwifterSwift: Shadow offset of view; also inspectable from Storyboard.
-    @IBInspectable var shadowOffset: CGSize {
+     var shadowOffset: CGSize {
         get {
             return layer.shadowOffset
         }
@@ -151,7 +151,7 @@ public extension UIView {
     }
 
     /// SwifterSwift: Shadow opacity of view; also inspectable from Storyboard.
-    @IBInspectable var shadowOpacity: Float {
+     var shadowOpacity: Float {
         get {
             return layer.shadowOpacity
         }
@@ -161,7 +161,7 @@ public extension UIView {
     }
 
     /// SwifterSwift: Shadow radius of view; also inspectable from Storyboard.
-    @IBInspectable var shadowRadius: CGFloat {
+     var shadowRadius: CGFloat {
         get {
             return layer.shadowRadius
         }

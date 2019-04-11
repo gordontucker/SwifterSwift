@@ -13,7 +13,7 @@ import Cocoa
 public extension NSView {
 
     /// SwifterSwift: Border color of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var borderColor: NSColor? {
         get {
             guard let color = layer?.borderColor else { return nil }
@@ -26,7 +26,7 @@ public extension NSView {
     }
 
     /// SwifterSwift: Border width of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var borderWidth: CGFloat {
         get {
             return layer?.borderWidth ?? 0
@@ -38,7 +38,7 @@ public extension NSView {
     }
 
     /// SwifterSwift: Corner radius of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var cornerRadius: CGFloat {
         get {
             return layer?.cornerRadius ?? 0
@@ -61,7 +61,7 @@ public extension NSView {
     }
 
     /// SwifterSwift: Shadow color of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var shadowColor: NSColor? {
         get {
             guard let color = layer?.shadowColor else { return nil }
@@ -74,7 +74,7 @@ public extension NSView {
     }
 
     /// SwifterSwift: Shadow offset of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var shadowOffset: CGSize {
         get {
             return layer?.shadowOffset ?? CGSize.zero
@@ -86,7 +86,7 @@ public extension NSView {
     }
 
     /// SwifterSwift: Shadow opacity of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var shadowOpacity: Float {
         get {
             return layer?.shadowOpacity ?? 0
@@ -98,7 +98,7 @@ public extension NSView {
     }
 
     /// SwifterSwift: Shadow radius of view; also inspectable from Storyboard.
-    @IBInspectable
+    
     var shadowRadius: CGFloat {
         get {
             return layer?.shadowRadius ?? 0
